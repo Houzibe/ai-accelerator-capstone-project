@@ -49,17 +49,17 @@ The project is designed as a proof‑of‑concept of my capstone project for an 
 
 This project requires the following Python packages. All versions are compatible with Python 3.11+.
 
-Library&emsp;&emsp;&emsp;&emsp;Version&emsp;&emsp;&emsp;&emsp;Purpose<br>
-pandas&emsp;&emsp;&emsp;&emsp;3.0.3&emsp;&emsp;&emsp;&emsp;Data loading, manipulation, and preprocessing<br>
-numpy&emsp;&emsp;&emsp;&emsp;2.4.6&emsp;&emsp;&emsp;&emsp;tNumerical operations and array handling<br>
-scikit-learn&emsp;&emsp;&emsp;&emsp;1.8.0&emsp;&emsp;&emsp;&emsp;Isolation Forest model, StandardScaler, LabelEncoder<br>
-matplotlib&emsp;&emsp;&emsp;&emsp;3.10.9&emsp;&emsp;&emsp;&emsp;Core plotting (SHAP visualisations, report charts)<br>
-seaborn&emsp;&emsp;&emsp;&emsp;0.13.2&emsp;&emsp;&emsp;&emsp;Statistical data visualisation for EDA<br>
-shap&emsp;&emsp;&emsp;&emsp;0.50.0&emsp;&emsp;&emsp;&emsp;SHAP explainability for model predictions<br>
-streamlit&emsp;&emsp;&emsp;&emsp;1.57.0&emsp;&emsp;&emsp;&emsp;Interactive fraud detection dashboard<br>
-python-dotenv&emsp;&emsp;&emsp;&emsp;1.0.0&emsp;&emsp;&emsp;&emsp;Load Kaggle API keys from .env file<br>
-kagglehub&emsp;&emsp;&emsp;&emsp;1.0.0&emsp;&emsp;&emsp;&emsp;Download datasets directly from Kaggle<br>
-jupyter&emsp;&emsp;&emsp;&emsp;optional&emsp;&emsp;&emsp;&emsp;Run exploratory notebooks<br>
+Library | Version | Purpose
+pandas | 3.0.3 | Data loading, manipulation, and preprocessing
+numpy | 2.4.6 | Numerical operations and array handling
+scikit-learn | 1.8.0 | Isolation Forest model, StandardScaler, LabelEncoder
+matplotlib | 3.10.9 | Core plotting (SHAP visualisations, report charts)
+seaborn | 0.13.2 | Statistical data visualisation for EDA
+shap | 0.50.0 | SHAP explainability for model predictions
+streamlit | 1.57.0 | Interactive fraud detection dashboard
+python-dotenv | 1.0.0 | Load Kaggle API keys from .env file
+kagglehub | 1.0.0 | Download datasets directly from Kaggle
+jupyter | optional | Run exploratory notebooks
 
 
 
