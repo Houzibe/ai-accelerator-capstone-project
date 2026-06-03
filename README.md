@@ -49,17 +49,18 @@ The project is designed as a proof‑of‑concept of my capstone project for an 
 
 This project requires the following Python packages. All versions are compatible with Python 3.11+.
 
-Library | Version | Purpose
-pandas | 3.0.3 | Data loading, manipulation, and preprocessing
-numpy | 2.4.6 | Numerical operations and array handling
-scikit-learn | 1.8.0 | Isolation Forest model, StandardScaler, LabelEncoder
-matplotlib | 3.10.9 | Core plotting (SHAP visualisations, report charts)
-seaborn | 0.13.2 | Statistical data visualisation for EDA
-shap | 0.50.0 | SHAP explainability for model predictions
-streamlit | 1.57.0 | Interactive fraud detection dashboard
-python-dotenv | 1.0.0 | Load Kaggle API keys from .env file
-kagglehub | 1.0.0 | Download datasets directly from Kaggle
-jupyter | optional | Run exploratory notebooks
+| Library | Version | Purpose |
+|--- | --- | --- | 
+| pandas | 3.0.3 | Data loading, manipulation, and preprocessing | 
+| numpy | 2.4.6 | Numerical operations and array handling | 
+| scikit-learn | 1.8.0 | Isolation Forest model, StandardScaler, LabelEncoder | 
+| matplotlib | 3.10.9 | Core plotting (SHAP visualisations, report charts) | 
+| seaborn | 0.13.2 | Statistical data visualisation for EDA | 
+| shap | 0.50.0 | SHAP explainability for model predictions | 
+| streamlit | 1.57.0 | Interactive fraud detection dashboard | 
+| python-dotenv | 1.0.0 | Load Kaggle API keys from .env file | 
+| kagglehub | 1.0.0 | Download datasets directly from Kaggle | 
+| jupyter | optional | Run exploratory notebooks | 
 
 
 
