@@ -7,6 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.ensemble import IsolationForest
+from pathlib import Path
 
 #------------------------------------------------------------
 # 1. Page Configuration
@@ -21,20 +22,23 @@ st.markdown("Upload a claims CSV file to identify suspicious claims (upcoding)")
 #------------------------------------------------------------
 # 2. Load the trained model and preprocessors
 #------------------------------------------------------------
+project_root = Path(__file__).resolve().parent.parent
+
 @st.cache_resource
 def load_model_and_preprocessors():
     """
     Load the trained Isolation Forest, feature names, encoders, and scaler.
     """
     try:
-        with open("../models/iso_forest.pkl", "rb") as f:
+        with open(project_root / "models" / "iso_forest.pkl", "rb") as f:
             model = pickle.load(f)
-        with open("../models/feature_names.pkl", "rb") as f:
+        with open(project_root / "models" / "feature_names.pkl", "rb") as f:
             feature_name = pickle.load(f)
-        with open("../models/encoders.pkl", "rb") as f:
+        with open(project_root / "models" / "encoders.pkl", "rb") as f:
             encoders = pickle.load(f)
-        with open("../models/scaler.pkl", "rb") as f:
+        with open(project_root / "models" / "scaler.pkl", "rb") as f:
             scaler = pickle.load(f)
+
         return model, feature_name, encoders, scaler
     except FileNotFoundError:
         st.warning("Pre-trained model not found. Training a basic Isolation Forest on sample data")
